@@ -1,0 +1,7 @@
+# When the cisco VPN starts acting up
+alias fix_vpn='sudo kextload /System/Library/Extensions/CiscoVPN.kext'
+
+#Hide and Show hidden files is MAC OS Finder
+alias hide_hidden='defaults write com.apple.finder AppleShowAllFiles FALSE;killall Finder'
+alias show_hidden='defaults write com.apple.finder AppleShowAllFiles TRUE;killall Finder'
+
