@@ -49,10 +49,15 @@ export ARCHFLAGS="-arch x86_64"
 
 #when the vpn starts acting up
 alias fix_vpn='sudo kextload /System/Library/Extensions/CiscoVPN.kext'
+
 alias be="bundle exec"
 alias reset_hostname='sudo scutil --set HostName billchapman.local'
+
+#show and hide hidden files in MAC OS X Finder
 alias hide_hidden='defaults write com.apple.finder AppleShowAllFiles FALSE; killall Finder'
 alias show_hidden='defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder'
+
+#shortcuts for GIT
 alias gup='git pull origin master'
 alias gcommit='git push origin master'
 alias gca="git commit -a"
@@ -61,6 +66,9 @@ alias gstat="git status"
 alias gp="git push"
 alias make="make -j2"
 alias giturl="cat .git/config | grep url"
+
+#go do projects directory
+alias proj="cd ~/projects"
 
 #for arduino
 alias clear_usb="sudo mkdir /var/lock && chmod a+rw /var/lock"
