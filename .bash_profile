@@ -3,6 +3,7 @@
 # ENVIRONMENT INITIALIZATION  #
 #                             #
 ###############################
+export PS1="[\W]\$ "
 
 #ensure ssh forwarding works
 ssh-agent > /dev/null 2>&1
@@ -16,7 +17,7 @@ if [ -s ~/.rvm/scripts/rvm-functions ] ; then source ~/.rvm/scripts/rvm-function
 #                             #
 #    ENVIRONMENT CONSTANTS    #
 #                             #
-###############################       
+###############################
 
 export ODBCINI=/Library/ODBC/odbc.ini
 export ODBCSYSINI=/Library/ODBC
@@ -36,7 +37,7 @@ export PATH=$PATH:/usr/local/sbin
 export PGUSER=byllc
 export PGDATA=/Users/byllc/Documents/pgdata
 export PGLOG=/Users/byllc/Documents/pgdata/server.log
-export PGHOST=localhost 
+export PGHOST=localhost
 
 export ARCHFLAGS="-arch x86_64"
 
@@ -48,7 +49,7 @@ export ARCHFLAGS="-arch x86_64"
 
 #when the vpn starts acting up
 alias fix_vpn='sudo kextload /System/Library/Extensions/CiscoVPN.kext'
-alias be="bundle exec" 
+alias be="bundle exec"
 alias reset_hostname='sudo scutil --set HostName billchapman.local'
 alias hide_hidden='defaults write com.apple.finder AppleShowAllFiles FALSE; killall Finder'
 alias show_hidden='defaults write com.apple.finder AppleShowAllFiles TRUE; killall Finder'
@@ -59,7 +60,7 @@ alias gb="git branch"
 alias gstat="git status"
 alias gp="git push"
 alias make="make -j2"
-alias giturl="cat .git/config | grep url" 
+alias giturl="cat .git/config | grep url"
 
 #for arduino
 alias clear_usb="sudo mkdir /var/lock && chmod a+rw /var/lock"
